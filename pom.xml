@@ -28,8 +28,8 @@
         <profile>
             <id>test</id>
             <properties>
-                <org>kukilbora-eval</org>
-                <apigee.org>kukilbora-eval</apigee.org>
+                <org>${apigeeorg}</org>
+                <apigee.org>${apigeeorg}</apigee.org>
                 <option>update</option>
                 <apigee.profile>test</apigee.profile>
                 <apigee.env>${environment}</apigee.env>
