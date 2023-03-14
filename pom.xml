@@ -15,8 +15,10 @@
             <apigee.apiversion>v1</apigee.apiversion>
             <apigee.username>${username}</apigee.username>
             <apigee.password>${password}</apigee.password>
-            <apigee.options>${options}</apigee.options>
+            <apigee.options>update</apigee.options>
+            <apigee.config.options>update</apigee.config.options>
             <apigee.revision>${revision}</apigee.revision>
+            <apigee.config.dir>${proxyname}/Configs/Test</apigee.config.dir>
             <apigee.override.delay>10</apigee.override.delay>
             <apigee.authtype>${authtype}</apigee.authtype> <!-- optional: oauth|basic(default) -->
             <apigee.tokenurl>${tokenurl}</apigee.tokenurl> <!-- optional: oauth -->
