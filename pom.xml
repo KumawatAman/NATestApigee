@@ -38,6 +38,14 @@
     </profiles>
 
  <build>
+         <resources>
+                  <resource>
+                           <directory>Configs/Test</directory>
+                           <includes>
+                                    <include>edge.json</include>
+                           </includes>
+                  </resource>
+         </resources>
         <plugins> 
 
 
