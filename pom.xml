@@ -31,7 +31,7 @@
             <id>test</id>
             <properties>
                 <org>${apigeeorg}</org>
-                <apigee.org>${apigeeorg}</apigee.org>
+                <apigee.org>kukilbora-eval</apigee.org>
                 <option>update</option>
                 <apigee.profile>test</apigee.profile>
                 <apigee.env>${environment}</apigee.env>
