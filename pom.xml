@@ -68,10 +68,10 @@
 
 
                     <execution>
-                        <id>copy-resources</id>
+                        <id>copy-resource</id>
                         <phase>process-resources</phase>
                         <goals>
-                            <goal>copy-resources</goal>
+                            <goal>copy-resource</goal>
                         </goals>
                         <configuration>
                             <outputDirectory>${project.build.outputDirectory}</outputDirectory>
