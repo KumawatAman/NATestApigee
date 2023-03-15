@@ -20,9 +20,9 @@
             <apigee.revision>${revision}</apigee.revision>
 <!--             <apigee.config.dir>${project.basedir}/Configs/Test/config.json</apigee.config.dir> -->
             <apigee.override.delay>10</apigee.override.delay>
-<!--             <apigee.authtype>${authtype}</apigee.authtype> <!-- optional: oauth|basic(default) --> -->
-<!--             <apigee.tokenurl>${tokenurl}</apigee.tokenurl> <!-- optional: oauth --> -->
-<!--             <apigee.bearer>${bearer}</apigee.bearer> <!-- optional: Bearer token override --> -->
+<!--             <apigee.authtype>${authtype}</apigee.authtype> optional: oauth|basic(default) --> 
+<!--             <apigee.tokenurl>${tokenurl}</apigee.tokenurl>  optional: oauth -->
+<!--             <apigee.bearer>${bearer}</apigee.bearer> optional: Bearer token override --> 
     </properties>
 
     <!-- This is where you add the environment specific properties under various profile names -->
