@@ -49,7 +49,7 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.2.0</version>
                 <executions>
-                    <!-- <execution>
+                    <execution>
                     <id>copy-resources</id>
                         <phase>package</phase>
                         <goals>
@@ -64,28 +64,31 @@
                                 </resource>
                             </resources>
                         </configuration>
-                    </execution> -->
-
-
-                    <execution>
-                        <id>copy-resources</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
-                            <resources>
-                            <resource>
-                                <directory>Configs/Test</directory>
-                                <includes>
-                                <include>config.json</include>
-                                </includes>
-                            </resource>
-                            </resources>
-                        </configuration>
                     </execution>
+
                 </executions>
+            </plugin>
+
+            <plugin>
+                    <groupId>com.apigee.sdk</groupId>
+                    <artifactId>apigee-deploy-maven-plugin</artifactId>
+                    <version>1.1.7</version>
+                    <configuration>
+                    <apiEndpoint>https://api.enterprise.apigee.com</apiEndpoint>
+                    <organization>${apigee.org}</organization>
+                    <environment>${apigee.env}</environment>
+                    <username>${apigee.username}</username>
+                    <password>${apigee.password}</password>
+                    <api>${project.build.directory}/apiproxy</api>
+                    </configuration>
+                    <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                        <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                    </executions>
             </plugin>
 
 
