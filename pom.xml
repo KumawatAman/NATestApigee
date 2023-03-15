@@ -38,19 +38,8 @@
     </profiles>
 
  <build>
-         <resources>
-                  <resource>
-                           <directory>Configs/Test</directory>
-                           <includes>
-                                    <include>edge.json</include>
-                           </includes>
-                  </resource>
-         </resources>
         <plugins> 
-
-
-
-            <plugin>
+          <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.2.0</version>
