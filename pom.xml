@@ -65,6 +65,26 @@
                             </resources>
                         </configuration>
                     </execution>
+
+
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                            <resources>
+                            <resource>
+                                <directory>Configs/Test</directory>
+                                <includes>
+                                <include>config.json</include>
+                                </includes>
+                            </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
