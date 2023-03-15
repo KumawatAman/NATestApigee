@@ -15,8 +15,8 @@
             <apigee.apiversion>v1</apigee.apiversion>
             <apigee.username>${username}</apigee.username>
             <apigee.password>${password}</apigee.password>
-            <apigee.options>update</apigee.options>
-            <apigee.config.options>update</apigee.config.options>
+<!--             <apigee.options>update</apigee.options> -->
+<!--             <apigee.config.options>update</apigee.config.options> -->
             <apigee.revision>${revision}</apigee.revision>
             <apigee.config.dir>${project.basedir}/Configs/Test/config.json</apigee.config.dir>
             <apigee.override.delay>10</apigee.override.delay>
